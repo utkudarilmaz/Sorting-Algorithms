@@ -47,8 +47,19 @@ void merge_sort (int *a, int size)
 
 void selection_sort (int *a, int size)
 {
-    //Fill this function
-
+    int i,j,temp;
+    for(i=0; i<size; i++)
+	{
+		for(j=i+1; j<size; j++)
+		{
+			if(a[i]>a[j])
+			{
+				temp=a[i];
+				a[i]=a[j];
+				a[j]=temp;
+			}
+		}
+	}
 }
 void insertion_sort(int *a, int size)
 {
